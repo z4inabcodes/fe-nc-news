@@ -10,5 +10,15 @@ const getArticlesApi = () => {
       
     });
   };
-
-  export{getArticlesApi}
+  const getArticlesById = (article_id) => { 
+    if(article_id===undefined){
+      {msg:'if not found}'
+    }}
+    return api.get(`/api/articles/${article_id}`).then(({ data }) => {
+    console.log(data ,'id one')
+      return data.article;
+      
+    });
+  };
+  
+  export{getArticlesApi,getArticlesById}

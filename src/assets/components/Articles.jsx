@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { getArticlesApi } from "../../api"
+import ArticleCard from "./ArticleCard";
+
 import { Link } from "react-router-dom";
 
 export default function Articles (){
@@ -36,10 +38,13 @@ if (error) {
           <h3>{article.title}</h3>
           <img src={article.article_img_url} alt={article.title} />
           <button>
-            <Link className="Link" to={`/article/${article.id}`}>Read More</Link>
+            <Link className="Link" to={`/article/${article.article_id}`}>Read More</Link>
           </button>
+          <p>by {article.author}</p>
           <p><button>🤍{article.votes}</button></p>
+   
         </li>
+
       ))}
     </ul>
   </div>

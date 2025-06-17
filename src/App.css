@@ -18,9 +18,10 @@
   flex: 1;
   min-width: 350px;
   max-width: 500px;
-  background: #646cff9a;
+  background: #bec1ff;
+  color: #ffffff;
   padding: 15px;
-  border: solid rgb(121, 107, 255);
+  border: solid rgb(241, 239, 253);
   border-radius: 8px;
   text-align: center;
   transition: transform 0.2s ease-in-out;
@@ -30,6 +31,7 @@
 .article:hover {
   transform: scale(1.02);
   background: #f1f1f1;
+  color: black;
 }
 
 .article img {
@@ -52,7 +54,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #000000;
 }
 button:focus,
 button:focus-visible {
@@ -60,8 +62,10 @@ button:focus-visible {
 }
 a:link { 
   text-decoration: none; 
+  color: black;
+  font-weight: bold;
 } 
 header{
-  background-color: #646cff;
+  background-color: #bec1ff;
   padding: 30px;
 }
